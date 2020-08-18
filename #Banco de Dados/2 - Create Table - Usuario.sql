@@ -1,4 +1,4 @@
-USE [ControleDespesas]
+USE [ApiAspNetCore]
 GO
 
 SET ANSI_NULLS ON
