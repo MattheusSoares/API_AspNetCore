@@ -1,3 +1,13 @@
 .vs/
+
 ApiAspNetCore/ApiAspNetCore.Api/bin/
 ApiAspNetCore/ApiAspNetCore.Api/obj/
+
+ApiAspNetCore/ApiAspNetCore.Dominio/bin/
+ApiAspNetCore/ApiAspNetCore.Dominio/obj/
+
+ApiAspNetCore/ApiAspNetCore.Infra.Data/bin/
+ApiAspNetCore/ApiAspNetCore.Infra.Data/obj/
+
+ApiAspNetCore/ApiAspNetCore.Test/bin/
+ApiAspNetCore/ApiAspNetCore.Test/obj/
