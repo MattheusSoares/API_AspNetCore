@@ -1,3 +1,3 @@
 USE [master]
 
-CREATE DATABASE [ControleDespesas]
+CREATE DATABASE [ApiAspNetCore]
