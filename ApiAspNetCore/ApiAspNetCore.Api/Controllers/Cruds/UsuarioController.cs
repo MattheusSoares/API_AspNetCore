@@ -17,7 +17,7 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
     [Produces("application/json")]
     [Route("Usuario")]
     [ApiController]
-    [Authorize]
+    //[Authorize]
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioRepositorio _repositorio;

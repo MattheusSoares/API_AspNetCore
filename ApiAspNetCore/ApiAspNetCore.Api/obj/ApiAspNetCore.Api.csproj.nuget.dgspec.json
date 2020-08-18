@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj": {}
+    "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj": {
+    "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
+        "projectUniqueName": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
         "projectName": "ApiAspNetCore.Api",
-        "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
-        "packagesPath": "C:\\Users\\l_san\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\obj\\",
+        "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
+        "packagesPath": "C:\\Users\\tz_sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\l_san\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tz_sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -32,11 +27,11 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
-                "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj"
+              "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
+                "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj"
               },
-              "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj"
+              "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj"
               }
             }
           }
@@ -105,27 +100,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
+    "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj",
         "projectName": "ApiAspNetCore.Dominio",
-        "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj",
-        "packagesPath": "C:\\Users\\l_san\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj",
+        "packagesPath": "C:\\Users\\tz_sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\l_san\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tz_sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -173,27 +163,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj": {
+    "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj",
         "projectName": "ApiAspNetCore.Infra.Data",
-        "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\l_san\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\tz_sa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\l_san\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\tz_sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -205,8 +190,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
-                "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj"
+              "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
+                "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj"
               }
             }
           }
@@ -249,7 +234,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
