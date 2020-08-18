@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vZfnhKR4sKnrJTVtfreROBolUHvegYAWDp6bl6kWRsN/br71fDcNMAZ9GZhUvpAC9bzhnKJUP9uR23Nz/fGhwA==",
+  "dgSpecHash": "oYyClV3VTtDzyRgFSuddgQTVQHjpg8AGc8BqcPnAdTOFZGHvjKUFFFBNXpF1ZBdZFNKwE3o1K0NxRcPDAFc5DQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\l_san\\.nuget\\packages\\lscode.facilitador.api\\2.1.0\\lscode.facilitador.api.2.1.0.nupkg.sha512",
+    "C:\\Users\\l_san\\.nuget\\packages\\lscode.validador\\1.7.5\\lscode.validador.1.7.5.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.antiforgery\\2.1.1\\microsoft.aspnetcore.antiforgery.2.1.1.nupkg.sha512",

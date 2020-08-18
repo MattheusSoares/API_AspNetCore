@@ -14,6 +14,15 @@
           "lib/netstandard2.0/LSCode.Facilitador.Api.dll": {}
         }
       },
+      "LSCode.Validador/1.7.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/LSCode.Validador.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/LSCode.Validador.dll": {}
+        }
+      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4416,6 +4425,18 @@
         "lib/netstandard2.0/LSCode.Facilitador.Api.dll",
         "lscode.facilitador.api.2.1.0.nupkg.sha512",
         "lscode.facilitador.api.nuspec"
+      ]
+    },
+    "LSCode.Validador/1.7.5": {
+      "sha512": "LLXACyFKjC7d7AqGe+3Q+FG0YihLbajZK3ZD5fN7ugtvGxmFRIo+SUwjHyXGJUXQexlMD23hfuP+iRJy/BvWDg==",
+      "type": "package",
+      "path": "lscode.validador/1.7.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/LSCode.Validador.dll",
+        "lscode.validador.1.7.5.nupkg.sha512",
+        "lscode.validador.nuspec"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -11925,6 +11946,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "LSCode.Facilitador.Api >= 2.1.0",
+      "LSCode.Validador >= 1.7.5",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -11978,6 +12000,10 @@
           "LSCode.Facilitador.Api": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "LSCode.Validador": {
+            "target": "Package",
+            "version": "[1.7.5, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",

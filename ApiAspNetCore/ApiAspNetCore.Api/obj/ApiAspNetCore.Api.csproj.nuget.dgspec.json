@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
+            "LSCode.Validador": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
