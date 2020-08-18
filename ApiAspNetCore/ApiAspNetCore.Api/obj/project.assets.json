@@ -4411,6 +4411,20 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "ApiAspNetCore.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "LSCode.Facilitador.Api": "2.1.0",
+          "LSCode.Validador": "1.7.5"
+        },
+        "compile": {
+          "bin/placeholder/ApiAspNetCore.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ApiAspNetCore.Dominio.dll": {}
+        }
       }
     }
   },
@@ -11941,10 +11955,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "ApiAspNetCore.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../ApiAspNetCore.Dominio/ApiAspNetCore.Dominio.csproj",
+      "msbuildProject": "../ApiAspNetCore.Dominio/ApiAspNetCore.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ApiAspNetCore.Dominio >= 1.0.0",
       "LSCode.Facilitador.Api >= 2.1.0",
       "LSCode.Validador >= 1.7.5",
       "Microsoft.AspNetCore.App >= 2.1.1",
@@ -11985,7 +12005,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
+              "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
