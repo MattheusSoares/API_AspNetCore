@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ApiAspNetCore.Dominio.Handlers;
+using ApiAspNetCore.Dominio.Repositorio;
+using ApiAspNetCore.Infra.Data.Repositorio;
+using ApiAspNetCore.Infra.Data.Settings;
+using LSCode.ConexoesBD.DbContext;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
 
 namespace ApiAspNetCore.Api
 {
@@ -23,6 +22,23 @@ namespace ApiAspNetCore.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            #region AppSettings
+            services.Configure<SettingsInfraData>(options => Configuration.GetSection("SettingsInfraData").Bind(options));
+            //services.Configure<SettingsAPI>(options => Configuration.GetSection("SettingsAPI").Bind(options));
+            #endregion
+
+            #region DataContext
+            services.AddScoped<DbContext>();
+            #endregion
+
+            #region Repositorios
+            services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
+            #endregion
+
+            #region Handler
+            services.AddTransient<UsuarioHandler, UsuarioHandler>();
+            #endregion
 
             #region Swagger
             services.AddSwaggerGen(c =>

@@ -9,4 +9,12 @@
     <PackageReference Include="LSCode.ConexoesBD" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ApiAspNetCore.Dominio\ApiAspNetCore.Dominio.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Queries\" />
+  </ItemGroup>
+
 </Project>
