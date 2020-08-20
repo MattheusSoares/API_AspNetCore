@@ -1,4 +1,6 @@
-﻿using ApiAspNetCore.Dominio.Commands.Usuario.Input;
+﻿using ApiAspNetCore.Api.Services;
+using ApiAspNetCore.Api.Settings;
+using ApiAspNetCore.Dominio.Commands.Usuario.Input;
 using ApiAspNetCore.Dominio.Commands.Usuario.Output;
 using ApiAspNetCore.Dominio.Handlers;
 using ApiAspNetCore.Dominio.Query.Usuario;
@@ -8,6 +10,7 @@ using LSCode.Validador.ValidacoesNotificacoes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 
@@ -17,20 +20,20 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
     [Produces("application/json")]
     [Route("Usuario")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioRepositorio _repositorio;
         private readonly UsuarioHandler _handler;
-        //private readonly string _ChaveAPI;
-        //private readonly TokenJWTService _tokenService;
+        private readonly string _ChaveAPI;
+        private readonly TokenJWTService _tokenService;
 
-        public UsuarioController(IUsuarioRepositorio repositorio, UsuarioHandler handler/*, IOptions<SettingsAPI> options, TokenJWTService tokenService*/)
+        public UsuarioController(IUsuarioRepositorio repositorio, UsuarioHandler handler, IOptions<SettingsAPI> options, TokenJWTService tokenService)
         {
             _repositorio = repositorio;
             _handler = handler;
-            //_ChaveAPI = options.Value.ChaveAPI;
-            //_tokenService = tokenService;
+            _ChaveAPI = options.Value.ChaveAPI;
+            _tokenService = tokenService;
         }
 
         /// <summary>
@@ -49,8 +52,8 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
         {
             try
             {
-                //if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
-                //    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
+                if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
+                    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
 
                 return StatusCode(StatusCodes.Status200OK, new ApiResponse<string, Notificacao>("Sucesso", "API Asp.Net Core 2.1 - Usuário OK"));
             }
@@ -76,8 +79,8 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
         {
             try
             {
-                //if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
-                //    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
+                if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
+                    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
 
                 var result = _repositorio.Listar();
 
@@ -111,8 +114,8 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
         {
             try
             {
-                //if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
-                //    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
+                if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
+                    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
 
                 if (command == null)
                     return StatusCode(StatusCodes.Status400BadRequest, new ApiResponse<object, Notificacao>("Parâmentros inválidos", new List<Notificacao>() { new Notificacao("Parâmetros de entrada", "Parâmetros de entrada estão nulos") }));
@@ -152,8 +155,8 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
         {
             try
             {
-                //if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
-                //    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
+                if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
+                    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
 
                 if (command == null)
                     return StatusCode(StatusCodes.Status400BadRequest, new ApiResponse<object, Notificacao>("Parâmentros inválidos", new List<Notificacao>() { new Notificacao("Parâmetros de entrada", "Parâmetros de entrada estão nulos") }));
@@ -193,8 +196,8 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
         {
             try
             {
-                //if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
-                //    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
+                if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
+                    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
 
                 if (command == null)
                     return StatusCode(StatusCodes.Status400BadRequest, new ApiResponse<object, Notificacao>("Parâmentros inválidos", new List<Notificacao>() { new Notificacao("Parâmetros de entrada", "Parâmetros de entrada estão nulos") }));
@@ -234,8 +237,8 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
         {
             try
             {
-                //if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
-                //    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
+                if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
+                    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
 
                 if (command == null)
                     return StatusCode(StatusCodes.Status400BadRequest, new ApiResponse<object, Notificacao>("Parâmentros inválidos", new List<Notificacao>() { new Notificacao("Parâmetros de entrada", "Parâmetros de entrada estão nulos") }));
@@ -276,8 +279,8 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
         {
             try
             {
-                //if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
-                //    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
+                if (Request.Headers["ChaveAPI"].ToString() != _ChaveAPI)
+                    return StatusCode(StatusCodes.Status401Unauthorized, new ApiResponse<object, Notificacao>("Acesso negado", new List<Notificacao>() { new Notificacao("Chave da API", "ChaveAPI não corresponde com a chave esperada") }));
 
                 if (command == null)
                     return StatusCode(StatusCodes.Status400BadRequest, new ApiResponse<object, Notificacao>("Parâmentros inválidos", new List<Notificacao>() { new Notificacao("Parâmetros de entrada", "Parâmetros de entrada estão nulos") }));
@@ -290,7 +293,7 @@ namespace ApiAspNetCore.Api.Controllers.Cruds
                 if (result.Sucesso)
                 {
                     UsuarioQueryResult usuarioQR = (UsuarioQueryResult)result.Dados;
-                    //usuarioQR.Token = _tokenService.GenerateToken(usuarioQR);
+                    usuarioQR.Token = _tokenService.GenerateToken(usuarioQR);
 
                     return StatusCode(StatusCodes.Status200OK, new ApiResponse<object, Notificacao>(result.Mensagem, usuarioQR));
                 }

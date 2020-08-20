@@ -1,4 +1,5 @@
-﻿using ApiAspNetCore.Dominio.Handlers;
+﻿using ApiAspNetCore.Api.Swagger;
+using ApiAspNetCore.Dominio.Handlers;
 using ApiAspNetCore.Dominio.Repositorio;
 using ApiAspNetCore.Infra.Data.Repositorio;
 using ApiAspNetCore.Infra.Data.Settings;
@@ -10,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
+using System.Collections.Generic;
 
 namespace ApiAspNetCore.Api
 {
@@ -44,7 +46,7 @@ namespace ApiAspNetCore.Api
             services.AddSwaggerGen(c =>
             {
                 //c.DescribeAllEnumsAsStrings();
-                //c.OperationFilter<SwaggerOperationFilters>();
+                c.OperationFilter<SwaggerOperationFilters>();
                 c.DescribeAllParametersInCamelCase();
                 c.IncludeXmlComments($@"{AppDomain.CurrentDomain.BaseDirectory}\Swagger.xml");
                 c.SwaggerDoc("v1", new Info
@@ -65,18 +67,18 @@ namespace ApiAspNetCore.Api
                     }
                 });
 
-                //c.AddSecurityDefinition("Bearer", new ApiKeyScheme
-                //{
-                //    In = "header",
-                //    Description = "Para autenticar use a palavra 'Bearer' + (um espaço entre a palavra Bearer e o Token) + 'Token'",
-                //    Name = "Authorization",
-                //    Type = "apiKey"
-                //});
+                c.AddSecurityDefinition("Bearer", new ApiKeyScheme
+                {
+                    In = "header",
+                    Description = "Para autenticar use a palavra 'Bearer' + (um espaço entre a palavra Bearer e o Token) + 'Token'",
+                    Name = "Authorization",
+                    Type = "apiKey"
+                });
 
-                //c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
-                //{
-                //    {"Bearer", new string[] { }},
-                //});
+                c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
+                {
+                    {"Bearer", new string[] { }},
+                });
             });
             #endregion
         }
