@@ -9670,7 +9670,7 @@
       ]
     },
     "System.Diagnostics.Process/4.1.0": {
-      "sha512": "mpVZ5bnlSs3tTeJ6jYyDJEIa6tavhAd88lxq1zbYhkkCu0Pno2+gHXcvZcoygq2d8JxW3gojXqNJMTAshduqZA==",
+      "sha512": "4dlFhzwmI3hl32P+8c9hnytYtV7Xldhsokm5i7Fvv5PmTS68TQCfsuJrREIyF9N1B8zlsSomp7AVrXLe45kKFQ==",
       "type": "package",
       "path": "system.diagnostics.process/4.1.0",
       "files": [
@@ -13867,7 +13867,7 @@
       ]
     },
     "System.Xml.XPath.XmlDocument/4.0.1": {
-      "sha512": "Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
+      "sha512": "gQQaCNO5FYxD37SNQvE+yZUNfCt/Y+FgCnead3hu37RsUiwy2cxqRDWPv+Ee+6DlOeV47xaSYYZ6GQW4EhoEXQ==",
       "type": "package",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "files": [
@@ -13930,20 +13930,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tz_sa\\.nuget\\packages\\": {}
+    "C:\\Users\\l_san\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
+      "projectUniqueName": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
       "projectName": "ApiAspNetCore.Api",
-      "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
-      "packagesPath": "C:\\Users\\tz_sa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Api\\obj\\",
+      "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\ApiAspNetCore.Api.csproj",
+      "packagesPath": "C:\\Users\\l_san\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Api\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\tz_sa\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\l_san\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"
@@ -13955,11 +13962,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
-              "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj"
+            "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj": {
+              "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Dominio\\ApiAspNetCore.Dominio.csproj"
             },
-            "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\tz_sa\\Documents\\Programação\\AspNet.Core\\API\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj"
+            "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj": {
+              "projectPath": "C:\\Users\\l_san\\Documents\\GitHub\\ApiAspNetCore\\ApiAspNetCore\\ApiAspNetCore.Infra.Data\\ApiAspNetCore.Infra.Data.csproj"
             }
           }
         }
@@ -14028,7 +14035,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   },
