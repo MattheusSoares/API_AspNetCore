@@ -1,17 +1,22 @@
-﻿using ApiAspNetCore.Api.Swagger;
+﻿using ApiAspNetCore.Api.Services;
+using ApiAspNetCore.Api.Settings;
+using ApiAspNetCore.Api.Swagger;
 using ApiAspNetCore.Dominio.Handlers;
 using ApiAspNetCore.Dominio.Repositorio;
 using ApiAspNetCore.Infra.Data.Repositorio;
 using ApiAspNetCore.Infra.Data.Settings;
 using LSCode.ConexoesBD.DbContext;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace ApiAspNetCore.Api
 {
@@ -27,7 +32,7 @@ namespace ApiAspNetCore.Api
 
             #region AppSettings
             services.Configure<SettingsInfraData>(options => Configuration.GetSection("SettingsInfraData").Bind(options));
-            //services.Configure<SettingsAPI>(options => Configuration.GetSection("SettingsAPI").Bind(options));
+            services.Configure<SettingsAPI>(options => Configuration.GetSection("SettingsAPI").Bind(options));
             #endregion
 
             #region DataContext
@@ -36,6 +41,10 @@ namespace ApiAspNetCore.Api
 
             #region Repositorios
             services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
+            #endregion
+
+            #region Services
+            services.AddTransient<TokenJWTService, TokenJWTService>();
             #endregion
 
             #region Handler
@@ -81,6 +90,28 @@ namespace ApiAspNetCore.Api
                 });
             });
             #endregion
+
+            #region Autenticação JWT
+            var keyString = Configuration.GetSection("SettingsAPI:ChaveJWT").Get<string>();
+            var key = Encoding.ASCII.GetBytes(keyString);
+
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = true;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(key),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
+            #endregion
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -95,7 +126,7 @@ namespace ApiAspNetCore.Api
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            //app.UseAuthentication();
+            app.UseAuthentication();
             app.UseMvc();
         }
     }
